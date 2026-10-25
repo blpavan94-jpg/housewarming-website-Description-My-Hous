@@ -1,258 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#090909">
-  <meta name="description" content="A warm invitation to the Griha Pravesha ceremony at Siddarameshwara Nilaya, Balenahalli, Mandya.">
-  <title>ಸಿದ್ದರಾಮೇಶ್ವರ ನಿಲಯ | Housewarming Invitation</title>
-  <style>
-    :root{--black:#090909;--panel:#121212;--gold:#d8b45a;--gold2:#f4df9b;--cream:#f7f0df;--muted:#c6bea9;--line:rgba(216,180,90,.38)}
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;background:var(--black);color:var(--cream);font-family:Georgia,"Noto Serif Kannada","Nirmala UI",serif;line-height:1.65}
-    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.13;background-image:radial-gradient(circle at 20% 10%,#d8b45a 0 1px,transparent 2px),radial-gradient(circle at 80% 30%,#d8b45a 0 1px,transparent 2px);background-size:43px 43px;z-index:-1}
-    a{color:inherit}
-    .topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 5%;border-bottom:1px solid var(--line);background:#090909eF}
-    .brand{color:var(--gold2);font-weight:bold;letter-spacing:.08em;font-size:.9rem}
-    .small-actions{display:flex;gap:8px;flex-wrap:wrap}
-    button,.btn{border:1px solid var(--gold);background:linear-gradient(135deg,#e7ca78,#b18a30);color:#17120a;border-radius:999px;padding:11px 17px;font-weight:bold;text-decoration:none;cursor:pointer;font-size:.92rem}
-    button.secondary,.btn.secondary{background:transparent;color:var(--gold2)}
-    button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid white;outline-offset:3px}
-    .hero{min-height:85vh;display:grid;place-items:center;text-align:center;padding:65px 20px 55px;position:relative;overflow:hidden}
-    .hero:before{content:"";position:absolute;inset:18px;border:1px solid var(--line);pointer-events:none}
-    .hero:after{content:"✦";position:absolute;top:30px;color:var(--gold);font-size:25px}
-    .hero-inner{width:min(850px,100%);animation:rise 1.2s ease both}
-    .welcome-lamp{font-size:2rem;margin:10px auto 2px;filter:drop-shadow(0 0 13px #d8b45a70);animation:lampFlicker 2.2s ease-in-out infinite;transform-origin:50% 80%}
-    @keyframes lampFlicker{0%,100%{transform:rotate(-2deg);filter:drop-shadow(0 0 8px #d8b45a45)}50%{transform:rotate(2deg);filter:drop-shadow(0 0 19px #f4df9b9c)}}
-    .eyebrow{color:var(--gold2);letter-spacing:.22em;text-transform:uppercase;font-size:.78rem}
-    .ornament{color:var(--gold);font-size:2rem;margin:12px}
-    h1{font-size:clamp(2.5rem,8vw,5.4rem);line-height:1.15;margin:10px 0;color:var(--gold2);text-shadow:0 0 25px #d8b45a20}
-    .kannada-title{font-size:clamp(1.9rem,6vw,3.5rem);margin:0 0 12px}
-    .subtitle{font-size:clamp(1rem,2.5vw,1.2rem);color:var(--muted);max-width:650px;margin:0 auto 22px}
-    .hero-photo{width:min(680px,90%);height:clamp(190px,38vw,350px);object-fit:cover;border:1px solid var(--gold);border-radius:8px;margin:22px auto 20px;display:block;background:#19150d}
-    .photo-note{font-size:.8rem;color:#bcb29b;margin-top:-12px}
-    .section{width:min(1000px,92%);margin:0 auto;padding:55px 0}
-    .section-heading{text-align:center;color:var(--gold2);font-size:clamp(1.7rem,5vw,2.5rem);margin:0 0 10px}
-    .section-intro{text-align:center;color:var(--muted);margin:0 auto 28px;max-width:700px}
-    .invite-card{background:linear-gradient(145deg,#151515,#0d0d0d);border:1px solid var(--line);border-radius:18px;padding:clamp(22px,5vw,48px);text-align:center;box-shadow:0 20px 60px #0008}
-    .names{font-size:clamp(1.35rem,4vw,2rem);color:var(--gold2);margin:18px 0}
-    .gold-line{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:24px 0}
-    .details-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:25px}
-    .detail{padding:18px;border:1px solid var(--line);border-radius:12px;background:#ffffff04}
-    .detail .label{font-size:.8rem;color:var(--gold);text-transform:uppercase;letter-spacing:.1em}
-    .detail .value{font-size:1.05rem;margin-top:5px}
-    .countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:650px;margin:25px auto 0}
-    .timebox{border:1px solid var(--line);border-radius:12px;padding:16px 6px;background:var(--panel)}
-    .timebox strong{display:block;font-size:clamp(1.4rem,4vw,2.4rem);color:var(--gold2);font-variant-numeric:tabular-nums}
-    .timebox span{font-size:.76rem;color:var(--muted);text-transform:uppercase}
-    .actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:25px}
-    .schedule{max-width:700px;margin:25px auto 0}
-    .schedule-row{display:grid;grid-template-columns:130px 1fr;gap:18px;padding:18px 0;border-bottom:1px solid var(--line)}
-    .schedule-time{color:var(--gold2);font-weight:bold}
-    .location-box{border:1px solid var(--line);border-radius:15px;overflow:hidden;background:var(--panel)}
-    .map-placeholder{padding:25px;text-align:center;background:radial-gradient(ellipse,#493a1a,#121212 70%)}
-    .map-placeholder p{color:var(--muted)}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ಸಿದ್ದರಾಮೇಶ್ವರ ನಿಲಯ - ಗೃಹಪ್ರವೇಶ</title>
 
-    /* Cinematic, lightweight gold animations */
-    body{background:radial-gradient(ellipse at 50% -15%,#30230c 0%,#090909 48%,#050505 100%);overflow-x:hidden}
-    body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.22;background:radial-gradient(circle at 12% 24%,#f4df9b 0 1px,transparent 2px),radial-gradient(circle at 75% 65%,#d8b45a 0 1px,transparent 2px),radial-gradient(circle at 45% 85%,#f4df9b 0 1px,transparent 2px);background-size:137px 157px,181px 191px,113px 127px;animation:stardust 18s linear infinite}
-    .hero:before{border:1px solid #d8b45a70;box-shadow:inset 0 0 45px #d8b45a0a,0 0 32px #d8b45a0b;animation:frameGlow 4s ease-in-out infinite}
-    .hero:after{content:"✦";animation:twinkle 2.8s ease-in-out infinite; text-shadow:0 0 18px #f4df9b}
-    .hero-inner{animation:cinematicRise 1.35s cubic-bezier(.2,.75,.25,1) both}
-    h1{background:linear-gradient(100deg,#b18a30 0%,#fff0b4 30%,#d8b45a 52%,#fff5cf 70%,#b18a30 100%);background-size:220% auto;color:transparent;background-clip:text;-webkit-background-clip:text;animation:goldShimmer 7s linear infinite;text-shadow:none}
-    .ornament{display:inline-block;text-shadow:0 0 18px #d8b45a55;animation:ornamentFloat 3.5s ease-in-out infinite}
-    .invite-card,.detail,.location-box{transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
-    .invite-card:hover{border-color:#f4df9b8a;box-shadow:0 24px 70px #000a,0 0 32px #d8b45a0c}
-    .detail:hover{transform:translateY(-4px);border-color:#f4df9b99;box-shadow:0 10px 30px #d8b45a0d}
-    .timebox{position:relative;overflow:hidden;box-shadow:inset 0 0 20px #d8b45a06;transition:transform .25s ease,border-color .25s ease}
-    .timebox:after{content:"";position:absolute;top:0;left:-120%;width:60%;height:1px;background:linear-gradient(90deg,transparent,#fff0b4,transparent);animation:scan 5s ease-in-out infinite}
-    .timebox:nth-child(2):after{animation-delay:.7s}.timebox:nth-child(3):after{animation-delay:1.4s}.timebox:nth-child(4):after{animation-delay:2.1s}
-    .section.reveal-ready{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
-    .section.reveal-ready.is-visible{opacity:1;transform:translateY(0)}
-    .topbar{backdrop-filter:blur(12px);position:relative}
-    .brand{animation:brandGlow 4s ease-in-out infinite}
-    .btn,button{transition:transform .22s ease,box-shadow .22s ease,filter .22s ease}
-    .btn:hover,button:hover{transform:translateY(-2px);box-shadow:0 8px 24px #d8b45a30;filter:brightness(1.06)}
-    .gold-line{background-size:200% 100%;animation:goldLine 5s linear infinite}
-    @keyframes cinematicRise{from{opacity:0;transform:translateY(35px) scale(.985);filter:blur(4px)}to{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
-    @keyframes goldShimmer{to{background-position:220% center}}
-    @keyframes ornamentFloat{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-5px) rotate(3deg)}}
-    @keyframes twinkle{0%,100%{opacity:.55;transform:scale(.85)}50%{opacity:1;transform:scale(1.15)}}
-    @keyframes frameGlow{0%,100%{border-color:#d8b45a50;box-shadow:inset 0 0 25px #d8b45a05}50%{border-color:#f4df9b9c;box-shadow:inset 0 0 45px #d8b45a0d}}
-    @keyframes stardust{from{background-position:0 0,0 0,0 0}to{background-position:0 300px,0 -240px,0 180px}}
-    @keyframes scan{0%,15%{left:-120%}65%,100%{left:160%}}
-    @keyframes brandGlow{0%,100%{text-shadow:0 0 0 #d8b45a00}50%{text-shadow:0 0 14px #d8b45a40}}
-    @keyframes goldLine{0%{background-position:100% 0}100%{background-position:-100% 0}}
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    .footer{text-align:center;padding:35px 20px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
-    .footer strong{color:var(--gold2)}
-    .hidden{display:none!important}
-    @keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-    @media(max-width:600px){.topbar{align-items:flex-start;flex-direction:column}.details-grid{grid-template-columns:1fr}.schedule-row{grid-template-columns:100px 1fr;gap:10px}.hero{min-height:78vh}.countdown{gap:6px}.timebox{padding:12px 3px}.timebox span{font-size:.65rem}}
-    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}.section.reveal-ready{opacity:1;transform:none}}
-  </style>
+body {
+  margin: 0;
+  padding: 20px 10px;
+  background: #090909;
+  color: #fff4d1;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.card {
+  max-width: 600px;
+  margin: auto;
+  padding: 28px 18px;
+  border: 2px solid #d4af37;
+  border-radius: 12px;
+  background: #111111;
+  animation: fadeIn 1.2s ease;
+}
+
+.gold {
+  color: #e5c46a;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.6;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 23px;
+  margin: 15px 0;
+}
+
+p {
+  line-height: 1.9;
+  font-size: 15px;
+}
+
+.line {
+  width: 100px;
+  border-top: 1px solid #d4af37;
+  margin: 22px auto;
+}
+
+.info {
+  border: 1px solid #8e742e;
+  border-radius: 8px;
+  margin: 12px 0;
+  padding: 12px;
+}
+
+.names {
+  color: #f2d783;
+  font-size: 17px;
+  line-height: 2;
+}
+
+#countdown {
+  font-size: 19px;
+  color: #f2d783;
+  font-weight: bold;
+}
+
+button {
+  background: #d4af37;
+  color: #111;
+  border: none;
+  border-radius: 6px;
+  padding: 13px 18px;
+  margin: 8px 4px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f2d783;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
 </head>
+
 <body>
-  <header class="topbar">
-    <div class="brand">✦ SIDDARAMESHWARA NILAYA ✦</div>
-    <div class="small-actions">
-      <button class="secondary" id="musicBtn" type="button" aria-pressed="false">♫ Play music</button>
-      <button id="shareTop" type="button">Share invitation</button>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-inner">
-        <div class="eyebrow">✧ A new beginning • ಶುಭಾರಂಭ ✧</div>
-        <div class="welcome-lamp" aria-hidden="true">🪔</div>
-        <div class="ornament" aria-hidden="true">❖ ✧ ❖</div>
-        <p class="kannada-title">ಸಿದ್ದರಾಮೇಶ್ವರ ನಿಲಯ</p>
-        <h1>Housewarming<br>Invitation</h1>
-        <p class="subtitle">With joy in our hearts and gratitude for your blessings, we warmly invite you to celebrate our Griha Pravesha.</p>
-        <p class="subtitle">ನಮ್ಮ ನೂತನ ಗೃಹದ ಗೃಹಪ್ರವೇಶ ಸಮಾರಂಭಕ್ಕೆ ತಾವು ಕುಟುಂಬ ಸಮೇತರಾಗಿ ಆಗಮಿಸಿ, ಶುಭ ಹಾರೈಸಬೇಕಾಗಿ ಪ್ರೀತಿಯ ಆಹ್ವಾನ.</p>
-        <img class="hero-photo" src="house-photo.jpg" alt="Our new home" onerror="this.classList.add('hidden');document.getElementById('photoNote').classList.remove('hidden')">
-        <p id="photoNote" class="photo-note hidden">Add your home photo as <strong>house-photo.jpg</strong> in this website folder.</p>
-        <div class="ornament" aria-hidden="true">✦</div>
-        <p class="subtitle"><strong>13 November 2026 · Friday</strong></p>
-        <div class="actions">
-          <a class="btn" href="#invitation">View Invitation ↓</a>
-          <button class="secondary" id="shareHero" type="button">Invite on WhatsApp</button>
-        </div>
-      </div>
-    </section>
+<div class="card">
 
-    <section class="section" id="invitation">
-      <div class="invite-card">
-        <div class="eyebrow">With the blessings of the Almighty</div>
-        <h2 class="section-heading">You are warmly invited</h2>
-        <p>We request the pleasure of your company and blessings on the auspicious occasion of our new home.</p>
-        <p>ನಮ್ಮ ಹೊಸ ಮನೆಯ ಶುಭಾರಂಭದ ಈ ಮಂಗಳಕರ ಸಂದರ್ಭದಲ್ಲಿ ನಿಮ್ಮ ಉಪಸ್ಥಿತಿ ಮತ್ತು ಆಶೀರ್ವಾದವನ್ನು ಕೋರುತ್ತೇವೆ.</p>
-        <div class="gold-line"></div>
-        <p class="names">ಶ್ರೀಮತಿ ಮಂಜುಳ ಮತ್ತು ಲೊಕೇಶಮೂರ್ತಿ ಜಿ</p>
-        <p>cordially invite you and your family</p>
-        <p class="names">ಗೃಹಪ್ರವೇಶ ಸಮಾರಂಭ · Griha Pravesha Ceremony</p>
-        <div class="details-grid">
-          <div class="detail"><div class="label">Date / ದಿನಾಂಕ</div><div class="value">Friday, 13 November 2026<br>ಶುಕ್ರವಾರ, 13 ನವೆಂಬರ್ 2026</div></div>
-          <div class="detail"><div class="label">Auspicious time / ಬ್ರಾಹ್ಮೀ ಮುಹೂರ್ತ</div><div class="value">5:00 AM – 6:00 AM<br>ಬೆಳಿಗ್ಗೆ 5:00 ರಿಂದ 6:00</div></div>
-          <div class="detail"><div class="label">Lunch / ಭೋಜನ</div><div class="value">12:30 PM · ಮಧ್ಯಾಹ್ನ 12:30</div></div>
-          <div class="detail"><div class="label">Venue / ಸ್ಥಳ</div><div class="value">ಸಿದ್ದರಾಮೇಶ್ವರ ನಿಲಯ<br>ಬಾಳೇನಹಳ್ಳಿ, ಬಸರಾಳು ಹೋಬಳಿ,<br>ಮಂಡ್ಯ ತಾಲ್ಲೂಕು ಮತ್ತು ಜಿಲ್ಲೆ</div></div>
-        </div>
-      </div>
-    </section>
+  <p class="gold">✦ ಶುಭಾರಂಭ ✦</p>
 
-    <section class="section" id="countdownSection">
-      <h2 class="section-heading">The Auspicious Day</h2>
-      <p class="section-intro">Our celebration begins at 5:00 AM IST on 13 November 2026.<br>ಶುಭ ದಿನದವರೆಗೆ ಇರುವ ಸಮಯ.</p>
-      <div class="countdown" aria-label="Countdown to ceremony">
-        <div class="timebox"><strong id="days">--</strong><span>Days</span></div>
-        <div class="timebox"><strong id="hours">--</strong><span>Hours</span></div>
-        <div class="timebox"><strong id="minutes">--</strong><span>Minutes</span></div>
-        <div class="timebox"><strong id="seconds">--</strong><span>Seconds</span></div>
-      </div>
-    </section>
+  <h1 class="gold">ಶುಭ ಗೃಹಪ್ರವೇಶ</h1>
+  <h2>Housewarming Ceremony</h2>
 
-    <section class="section">
-      <h2 class="section-heading">Programme / ಕಾರ್ಯಕ್ರಮ</h2>
-      <p class="section-intro">We look forward to celebrating this special day with you.</p>
-      <div class="schedule">
-        <div class="schedule-row"><div class="schedule-time">5:00–6:00 AM</div><div><strong>ಗೃಹಪ್ರವೇಶ ಪೂಜೆ</strong><br>Griha Pravesha Puja · ಬ್ರಾಹ್ಮೀ ಮುಹೂರ್ತ</div></div>
-        <div class="schedule-row"><div class="schedule-time">12:30 PM</div><div><strong>ಮಧ್ಯಾಹ್ನದ ಊಟ</strong><br>Lunch</div></div>
-      </div>
-    </section>
+  <div class="line"></div>
 
-    <section class="section" id="location">
-      <h2 class="section-heading">Find Our Home</h2>
-      <p class="section-intro">ನಮ್ಮ ಮನೆಗೆ ದಾರಿ / Directions to our home</p>
-      <div class="location-box">
-        <div class="map-placeholder">
-          <div class="ornament">⌖</div>
-          <h3>ಸಿದ್ದರಾಮೇಶ್ವರ ನಿಲಯ</h3>
-          <p>ಬಾಳೇನಹಳ್ಳಿ · ಬಸರಾಳು · ಮಂಡ್ಯ, ಕರ್ನಾಟಕ</p>
-          <p>Note: This opens a village-level map search, not a verified pin for the exact house.</p>
-          <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Balenahalli%2C%20Basaralu%2C%20Mandya%2C%20Karnataka">Open Google Maps</a>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="invite-card">
-        <div class="ornament">❖</div>
-        <h2 class="section-heading">Your presence is our blessing</h2>
-        <p>ನಿಮ್ಮ ಆಗಮನವೇ ನಮಗೆ ಆಶೀರ್ವಾದ.</p>
-        <p>With love and regards,<br><strong class="names">ಶ್ರೀಮತಿ ಮಂಜುಳ ಮತ್ತು ಲೊಕೇಶಮೂರ್ತಿ ಜಿ</strong></p>
-        <div class="actions">
-          <button id="shareBottom" type="button">Share with Friends & Family</button>
-          <a class="btn secondary" href="#home">Back to top ↑</a>
-        </div>
-      </div>
-    </section>
-  </main>
+  <p>
+    ನಮ್ಮ ಹೊಸ ಮನೆಯ ಶುಭಾರಂಭದ ಮಂಗಳ ಕ್ಷಣಕ್ಕೆ
+    ನಿಮ್ಮನ್ನು ಪ್ರೀತಿಯಿಂದ ಆಹ್ವಾನಿಸುತ್ತೇವೆ.
+  </p>
 
-  <footer class="footer">
-    <strong>ಸಿದ್ದರಾಮೇಶ್ವರ ನಿಲಯ</strong><br>
-    With love, prayers and new beginnings · ಪ್ರೀತಿ, ಪ್ರಾರ್ಥನೆ ಮತ್ತು ಶುಭಾರಂಭ
-  </footer>
+  <p>
+    We cordially invite you to celebrate
+    our new home with us.
+  </p>
 
-  <audio id="bgMusic" src="music.mp3" loop preload="none"></audio>
+  <div class="line"></div>
 
-  <script>
-    // Ceremony time: 13 November 2026, 5:00 AM India Standard Time (UTC+05:30)
-    const eventTime = new Date("2026-11-13T05:00:00+05:30").getTime();
-    function updateCountdown() {
-      const remaining = eventTime - Date.now();
-      if (remaining <= 0) {
-        ["days","hours","minutes","seconds"].forEach(id => document.getElementById(id).textContent = "0");
-        document.querySelector("#countdownSection .section-intro").textContent =
-          "The auspicious day is here! ಶುಭ ದಿನ ಬಂದಿದೆ!";
-        return;
-      }
-      document.getElementById("days").textContent = Math.floor(remaining / 86400000);
-      document.getElementById("hours").textContent = Math.floor((remaining % 86400000) / 3600000);
-      document.getElementById("minutes").textContent = Math.floor((remaining % 3600000) / 60000);
-      document.getElementById("seconds").textContent = Math.floor((remaining % 60000) / 1000);
-    }
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
+  <h2 class="gold">ಸಿದ್ದರಾಮೇಶ್ವರ ನಿಲಯ</h2>
+  <p>Siddarameshwara Nilaya</p>
 
-    async function shareInvitation() {
-      const message = "You are warmly invited to the Griha Pravesha ceremony at ಸಿದ್ದರಾಮೇಶ್ವರ ನಿಲಯ on 13 November 2026. Puja: 5:00–6:00 AM; Lunch: 12:30 PM. Venue: ಬಾಳೇನಹಳ್ಳಿ, ಬಸರಾಳು, ಮಂಡ್ಯ. Invitation: " + window.location.href;
-      if (navigator.share) {
-        try { await navigator.share({title:"Housewarming Invitation | ಸಿದ್ದರಾಮೇಶ್ವರ ನಿಲಯ", text:message, url:window.location.href}); }
-        catch (error) { if (error.name !== "AbortError") window.open("https://wa.me/?text=" + encodeURIComponent(message), "_blank", "noopener"); }
-      } else {
-        window.open("https://wa.me/?text=" + encodeURIComponent(message), "_blank", "noopener");
-      }
-    }
-    ["shareTop","shareHero","shareBottom"].forEach(id =>
-      document.getElementById(id).addEventListener("click", shareInvitation)
-    );
+  <div class="info">
+    <h2 class="gold">13 ನವೆಂಬರ್ 2026</h2>
+    <p>ಶುಕ್ರವಾರ | Friday</p>
+  </div>
 
-    // Reveal each section gently as visitors scroll down.
-    const revealSections = document.querySelectorAll("main .section");
-    if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      revealSections.forEach(section => section.classList.add("reveal-ready"));
-      const revealObserver = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            revealObserver.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12 });
-      revealSections.forEach(section => revealObserver.observe(section));
-    }
+  <div class="info">
+    <h3 class="gold">🪔 ಗೃಹಪ್ರವೇಶ ಪೂಜೆ</h3>
+    <p>ಬೆಳಿಗ್ಗೆ 5:00 ರಿಂದ 6:00</p>
+    <p>Brahmi Muhurtha</p>
+  </div>
 
-    const music = document.getElementById("bgMusic");
-    const musicBtn = document.getElementById("musicBtn");
-    musicBtn.addEventListener("click", async () => {
-      if (music.paused) {
-        try { await music.play(); musicBtn.textContent = "Ⅱ Pause music"; musicBtn.setAttribute("aria-pressed","true"); }
-        catch { alert("Add a valid music.mp3 file to the website folder, then try again."); }
-      } else {
-        music.pause(); musicBtn.textContent = "♫ Play music"; musicBtn.setAttribute("aria-pressed","false");
-      }
-    });
-  </script>
+  <div class="info">
+    <h3 class="gold">🍽️ ಮಧ್ಯಾಹ್ನದ ಊಟ</h3>
+    <p>ಮಧ್ಯಾಹ್ನ 12:30</p>
+    <p>Lunch</p>
+  </div>
+
+  <div class="line"></div>
+
+  <h3 class="gold">ಆತಿಥೇಯರು</h3>
+  <p>ಶ್ರೀಮತಿ ಮಂಜುಳ ಮತ್ತು ಲೋಕೇಶ್ ಮೂರ್ತಿ ಜಿ</p>
+
+  <h3 class="gold">ಕುಟುಂಬದ ಆತ್ಮೀಯರು</h3>
+  <div class="names">
+    ಪವನ್ ಮತ್ತು ಅಭಿಷೇಕ್<br>
+    ಚಿನ್ನಸ್ವಾಮಿ ಮತ್ತು ನಿರ್ಮಲ<br>
+    ಮಮತಾ ಮತ್ತು ಭೂಮಿಕಾ
+  </div>
+
+  <div class="line"></div>
+
+  <h3 class="gold">ಸ್ಥಳ</h3>
+  <p>
+    ಬಾಳೇನಹಳ್ಳಿ<br>
+    ಬಸರಾಳು ಹೋಬಳಿ, ಮಂಡ್ಯ ತಾಲ್ಲೂಕು 571416
+  </p>
+
+  <div class="line"></div>
+
+
+  <p id="countdown.."></p>
+
+  <button onclick="shareWhatsApp()
+  </button>
+
+  <button onclick="copyLink()
+  </button>
+
+  <p id="message" class="gold"></p>
+
+  <div class="line"></div>
+
+  <p class="gold">
+
+  Thank you for being part of our happiness.</p>
+
+</div>
+
+<script>
+const eventDate = new Date(2026, 10, 13, 5, 0, 0);
+
+function updateCountdown() {
+  const difference = eventDate.getTime() - Date.now();
+
+  if (difference <= 0) {
+    document.getElementById("countdown").textContent =
+    
+    return;
+  }
+
+  const days = Math.floor(difference / 86400000);
+  const hours = Math.floor((difference % 86400000) / 3600000);
+  const minutes = Math.floor((difference % 3600000) / 60000);
+  const seconds = Math.floor((difference % 60000) / 1000);
+
+  document.getElementById("countdown").textContent =
+    days + " ದಿನ " + hours + " ಗಂಟೆ " +
+    minutes + " ನಿಮಿಷ " + seconds + " ಸೆಕೆಂಡು";
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+function shareWhatsApp() {
+  const invitation =
+    "🙏 ನಮ್ಮ ಗೃಹಪ್ರವೇಶಕ್ಕೆ ಆತ್ಮೀಯ ಆಹ್ವಾನ!\n\n" +
+    "🏡 ಸಿದ್ದರಾಮೇಶ್ವರ ನಿಲಯ\n" +
+    "📅 13 ನವೆಂಬರ್ 2026, ಶುಕ್ರವಾರ\n" +
+    "🪔 ಪೂಜೆ: ಬೆಳಿಗ್ಗೆ 5:00–6:00\n" +
+    "🍽️ ಊಟ: ಮಧ್ಯಾಹ್ನ 12:30\n\n" +
+    "ಆತಿಥೇಯರು: ಶ್ರೀಮತಿ ಮಂಜುಳ ಮತ್ತು ಲೊಕೇಶಮೂರ್ತಿ ಜಿ\n" +
+    "ಕುಟುಂಬದ ಆತ್ಮೀಯರು: ಪವನ್ ಮತ್ತು ಅಭಿಷೇಕ್, " +
+    "ಚಿನ್ನಸ್ವಾಮಿ ಮತ್ತು ನಿರ್ಮಲ, ಮಮತಾ ಮತ್ತು ಭೂಮಿಕಾ\n\n" +
+    "ಸ್ಥಳ: ಬಾಳೇನಹಳ್ಳಿ\n" +
+    window.location.href;
+
+  window.open(
+    "https://wa.me/?text=" + encodeURIComponent(invitation),
+    "_blank"
+  );
+}
+
+async function copyLink() {
+  try {
+    await navigator.clipboard.writeText(window.location.href);
+    document.getElementById("message").textContent =
+      "Website Link Copy ಆಯಿತು!";
+  } catch (error) {
+    document.getElementById("message").textContent =
+      "Browserನ ಮೇಲಿರುವ Website Link ಅನ್ನು Copy ಮಾಡಿ.";
+  }
+}
+</script>
+
 </body>
 </html>
